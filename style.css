@@ -9,9 +9,23 @@ table{
     min-width: 50em;
     min-height: 50em;
 }
-tr{
-    background-color: rgb(4, 160, 15);
-}
 td{
     border: 1px solid black;
+    background-color: rgb(4, 160, 15);
+}
+h2{
+    text-align: center;
+    color: rgb(4, 160, 15);
+}
+ol{
+    color: rgb(4, 160, 15);
+}
+.goldPiece {
+    background-color: gold;
+    border-radius: 50%;
+    border-color: gold;
+}
+.blackPiece {
+    background-color: black;
+    border-radius: 50%;
 }
