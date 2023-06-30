@@ -1,7 +1,17 @@
-body{
-    background-color: black;
-}
 h1{
     text-align: center;
     color: rgb(4, 160, 15);
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    min-width: 50em;
+    min-height: 50em;
+}
+tr{
+    background-color: rgb(4, 160, 15);
+}
+td{
+    border: 1px solid black;
 }
