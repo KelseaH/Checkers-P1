@@ -2,10 +2,11 @@ h1{
     text-align: center;
 }
 table{
-    /*margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
-    min-width: 50em;
-    min-height: 50em;*/
+    /*min-width: 40em;
+    min-height: 40em;*/
+    border: 1px solid rgb(4, 160, 15);
 }
 h2{
     text-align: center;
@@ -20,6 +21,7 @@ ol{
     border-color: gold;
     width: 50px;
     height: 50px;
+    text-align: center;
 }
 .blackPiece {
     background-color: black;
@@ -27,6 +29,8 @@ ol{
     border-color: black;
     width: 50px;
     height: 50px;
+    text-align: center;
+    color: white;
 }
 .greenSquare {
     background-color: rgb(4, 160, 15);
