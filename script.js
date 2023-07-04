@@ -41,6 +41,10 @@ function stopDrag(event) {
     console.log(event);
     event.target.appendChild(dragObject)
 }
+function removePiece(event) {
+    console.log(event);
+    event.target.remove(goldpiece)
+}
 
 goldpiece = document.getElementsByClassName("goldPiece");
 console.log(goldpiece);
