@@ -1,4 +1,4 @@
-piece = {
+const piece = {
     color: 1,
     id: 1,
     king: false,
@@ -43,7 +43,7 @@ function stopDrag(event) {
 }
 function removePiece(event) {
     console.log(event);
-    event.target.remove(goldpiece)
+    event.target.remove()
 }
 
 goldpiece = document.getElementsByClassName("goldPiece");
@@ -64,6 +64,7 @@ for (var i=0; i < 8; i++) {
             element.setAttribute("draggable", true);
             element.ondragstart = startDrag;
             element.textContent = String(piece.id);
+            element.addEventListener("dragleave", removePiece)
             boardSpace = document.getElementById(String(i) + "_" + String(j));
             boardSpace.appendChild(element);
         }
