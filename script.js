@@ -40,6 +40,7 @@ function allowDrop(event) {
 function stopDrag(event) {
     console.log(event);
     event.target.appendChild(dragObject)
+    /*Return function??*/
 }
 function removePiece(event) {
     console.log(event);
