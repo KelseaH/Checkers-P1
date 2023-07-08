@@ -70,5 +70,8 @@ for (var i=0; i < 8; i++) {
             boardSpace.appendChild(element);
         }
     }
+    /*function playersTurn() {
+        
+    } */ 
 }
 
