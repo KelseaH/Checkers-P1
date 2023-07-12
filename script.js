@@ -25,6 +25,7 @@ board = [
 
 dragObject = null;
 
+
 function startDrag(event) {
     console.log(event);
     console.log(event.srcElement.parentElement.id);
@@ -39,14 +40,14 @@ function allowDrop(event) {
 
 function stopDrag(event) {
     console.log(event);
-    event.target.appendChild(dragObject)
-    /*Return function??*/
+    event.target.appendChild(dragObject);
 }
 function removePiece(event) {
     console.log(event);
-    event.target.remove()
+    event.target.remove(makePiece);
 }
 
+/*remove event listener on whitespace*/
 goldpiece = document.getElementsByClassName("goldPiece");
 console.log(goldpiece);
 
@@ -65,13 +66,13 @@ for (var i=0; i < 8; i++) {
             element.setAttribute("draggable", true);
             element.ondragstart = startDrag;
             element.textContent = String(piece.id);
-            element.addEventListener("dragleave", removePiece)
+            element.addEventListener("dragover", removePiece)
             boardSpace = document.getElementById(String(i) + "_" + String(j));
             boardSpace.appendChild(element);
         }
     }
     /*function playersTurn() {
-        
+
     } */ 
 }
 
