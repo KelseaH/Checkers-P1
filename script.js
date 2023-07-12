@@ -39,13 +39,16 @@ function allowDrop(event) {
 }
 
 function stopDrag(event) {
+    if (boardSpace == piece) {
+        
+    }
     console.log(event);
     event.target.appendChild(dragObject);
 }
-/*function removePiece(event) {
+function removePiece(event) {
     console.log(event);
     event.target.remove(makePiece);
-}*/
+}
 
 goldpiece = document.getElementsByClassName("goldPiece");
 console.log(goldpiece);
@@ -65,7 +68,7 @@ for (var i=0; i < 8; i++) {
             element.setAttribute("draggable", true);
             element.ondragstart = startDrag;
             element.textContent = String(piece.id);
-            /*element.addEventListener("dragover", removePiece)*/
+            element.addEventListener("dblclick", removePiece)
             boardSpace = document.getElementById(String(i) + "_" + String(j));
             boardSpace.appendChild(element);
         }
